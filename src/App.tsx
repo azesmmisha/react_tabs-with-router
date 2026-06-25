@@ -5,7 +5,13 @@ import { NavLink, Navigate, Route, Routes } from 'react-router-dom';
 import { TabsPage } from './pages/TabsPage';
 import { HomePage } from './pages/HopePage';
 
-const NavItem = ({ to, children }: { to: string; children: React.ReactNode }) => (
+const NavItem = ({
+  to,
+  children,
+}: {
+  to: string;
+  children: React.ReactNode;
+}) => (
   <NavLink
     to={to}
     className={({ isActive }) => 'navbar-item' + (isActive ? ' is-active' : '')}
