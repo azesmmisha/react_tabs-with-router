@@ -3,7 +3,6 @@ import '@fortawesome/fontawesome-free/css/all.css';
 import './App.scss';
 import { NavLink, Navigate, Route, Routes } from 'react-router-dom';
 import { TabsPage } from './pages/TabsPage';
-import { HomePage } from './pages/HopePage';
 
 const NavItem = ({
   to,
@@ -37,7 +36,7 @@ export const App = () => (
     <div className="section">
       <div className="container">
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<h1 className="title">Home page</h1>} />
           <Route path="/home" element={<Navigate to="/" replace />} />
           <Route path="tabs">
             <Route index element={<TabsPage />} />
