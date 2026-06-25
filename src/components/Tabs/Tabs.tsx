@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Tab } from '../types/Tab';
+import { Tab } from '../../types/Tab';
 
 type Props = {
   tabs: Tab[];
